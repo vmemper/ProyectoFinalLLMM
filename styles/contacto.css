@@ -1,0 +1,259 @@
+:root {
+
+    --color-main: rgb(27, 24, 24);
+
+    --color-form: rgb(253, 253, 253);
+    --color-titulo-form: rgb(221, 36, 36);
+    --color-fondo-form: rgb(214, 108, 108);
+    --color-boton-form: rgb(179, 3, 3);
+
+    --color-form-arreglos: rgb(116, 40, 40);
+    --color-main: rgb(27, 24, 24);
+}
+/*  FUENTES DE LETRA
+    font-family: "Nunito", sans-serif; 
+    font-family: "Bebas Neue", sans-serif;
+*/
+
+
+.mainprincipalcontacto{
+    display: flex;
+    justify-content: center;
+    background-color:var(--color-main) ;
+    height: 90vh;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-titulo-form);
+    height: 4vh;
+    border-bottom: 0.2vw solid rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;  
+}
+p{
+    font-family: "Nunito", sans-serif;  
+}
+
+h1{
+    font-size: 30px;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+.seccionizquierda{
+    width: 47vw;    
+    height: 55vh;
+    background-color: var(--color-form);
+    margin-right:1vh;
+    margin-top: 2vh;
+}
+.seccionizquierdaarriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47vw;
+    height:1vh ;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.seccionderecha{
+    width: 47vw;
+    height:55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-form);
+    margin-left:1vh ;
+    margin-top: 2vh;
+}
+
+.seccionderechaarriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47vw;
+    height:1vh ;
+    background-color:var(--color-form-trabajo);
+    margin-bottom: 3VH;
+}
+
+.seccionsuperiorizquierda {
+    background-color: var(--color-fondo-form);
+    height: 41vh;
+}
+
+/* Input general */
+input[type=text] {
+    padding: 0.8vh;
+    margin: 1.6vh 0; 
+    border: 0.1vw solid #000000;
+    border-radius: 0.2vw;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif; 
+}
+
+/* Botón de envío */
+.enviodedatos>[type=submit] {
+    width: 43vw;
+    background-color: var(--color-boton-form);
+    color: rgb(255, 255, 255);
+    padding: 1.1vh;
+    margin: 1vh ;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif; 
+}
+
+.enviodedatos>[type=submit]:hover {
+    border-color: aliceblue;
+    color: #000000;
+    font-weight: 700;
+    background-color: #e00404;
+    transition: background-color 0.3s, border-color 0.3s;
+
+}
+
+/* Estilo de peticion de nombre y apellidos */
+.seccionnombreyapellido{
+    padding-top: 1vh; 
+    padding-left: 2vh;
+    display: flex;
+    gap: 1vw;
+}
+.seccionapellido>input[type=text]{
+    width: 17vw;
+}
+.seccionnombre>input[type=text]{
+    width: 17vw;
+}
+
+/* Estilo de parte de peticion decodigo postal y país*/
+.seccioncodigopostalypais{
+    padding-left: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+
+.seccionpais>input[type=text]{
+    width: 7vw;
+}
+
+.seccioncodigopostal>input[type=text]{
+    width: 5.5vw;
+}
+
+/* Estilo de parte de peticion de correo y telefono */
+.seccioncorreoynumero{
+    padding-left: 2vh;
+    display: flex;
+    gap: 1vw;
+    
+}
+.seccioncorreo>input[type=text]{
+    width: 20.7vw;
+}
+
+.secciontelefono>input[type=text]{
+    width: 10vw;
+}
+
+
+.numcuentabancaria>input[type=text]{
+    width: 21.3vw;
+}
+
+.enviodedatos{
+    padding-left: 2vh;
+}
+
+.seccionterminosycondiciones{
+    padding-left: 2vh;
+}
+
+.seccionpreguntas{
+    padding-left: 2vh;
+}
+
+span{
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    main{
+        background-color: white;
+    }
+
+    
+    h1{
+        margin-bottom: 19vh;
+
+    }
+
+    .mainprincipalcontacto {
+        flex-direction: column; /* Cambia el diseño a columna */
+        height: 170vh;
+    }
+
+    h1 {
+        font-size: 20px; /* Reducir tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .seccionizquierda,
+    .seccionderecha {
+        width: 100%; /* Las secciones ocupan todo el ancho disponible */
+        max-width: 100%; /* Eliminamos el límite de ancho para pantallas pequeñas */
+    }
+
+    .seccionderecha{
+        margin-top: 10vh;
+    }
+
+    .seccionnombreyapellido,
+    .seccioncodigopostalypais,
+    .seccioncorreoynumero {
+        flex-direction: column; /* Los campos se apilan en columna */
+        gap: 1vh;
+    }
+
+    .seccionapellido > input[type="text"],
+    .seccionnombre > input[type="text"],
+    .seccionpais > input[type="text"],
+    .seccioncodigopostal > input[type="text"],
+    .seccioncorreo > input[type="text"],
+    .secciontelefono > input[type="text"],
+    .numcuentabancaria > input[type="text"] {
+        width: 90%; /* Hacemos que los inputs se adapten mejor en pantallas pequeñas */
+    }
+
+    .enviodedatos > [type="submit"] {
+        width: 90%; /* Botón de envío más ancho en pantallas pequeñas */
+    }
+
+    .seccionizquierda{
+        height: 90vh;
+        background-color: var(--color-form);
+
+        margin-top: 2vh;
+    }
+
+    .seccionderecha{
+
+        height:80vh;
+
+        margin-top: 2vh;
+    }
+
+    .seccionsuperiorizquierda {
+        background-color: var(--color-fondo-form);
+        height: 80vh;
+    }
+}
+
+

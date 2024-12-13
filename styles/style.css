@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-rojo-header: rgb(246, 25, 25);
+    --color-amarillo-header: rgb(255, 213, 0);
+}
+
+/*  FUENTES DE LETRA
+    font-family: "Nunito", sans-serif; 
+    font-family: "Bebas Neue", sans-serif;
+*/
+body{
+    background-color: rgb(27, 24, 24);
+}
+
+
+header{
+    height: 10vh;
+    background-color: red; 
+    background-image: linear-gradient(var(--color-amarillo-header),var(--color-rojo-header));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotologo{
+    height: 13vh;
+}
+
+/* navegador otras paginas */
+.navegadorprincipal{
+    background-color:var(--color-rojo-header);
+    padding-top: 2vh;
+    display: flex;
+    position: sticky;
+    top:0;
+}
+
+.navenlaces{
+    width: 50vw;
+    height:6vh;
+
+}
+
+.opcionnavegador{  
+    text-decoration: none;  
+    /* Estilo letra navegador */
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(0, 0, 0); 
+    font-size: 1.3vw;
+    font-weight: 700;
+    letter-spacing: 0.12vw;
+}
+
+a{
+    height:4vh ;
+    margin-left:3vh;
+    text-decoration: none;
+}
+  
+  /* Change the link color on hover */
+a:hover {
+    color: rgb(251, 255, 4);
+}
+/* 
+navegador redes sociales */
+.navredessociales{
+    width: 50vw;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    margin-right: 3vh;
+  
+}
+
+.opcionnavegador>img{
+    width: 2vw;
+    filter: brightness(0);
+}
+.mainprincipal{
+    height: 100vh;
+    /* background-color: rgb(255, 213, 0); */
+    background-color: rgb(27, 24, 24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+.seccionuno > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 5vh; /* Altura del título */
+}
+
+.titulo > h1 {
+    padding-left: 1vw;
+    font-family: "Nunito", sans-serif;
+    color: whitesmoke;
+    font-size: 19px;
+
+}
+
+.seccionuno > .contenido {
+    display: flex;
+    width: 98vw; 
+    height: 50vh; 
+}
+
+.informacion {
+    width: 75vw; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1vw; 
+    box-sizing: border-box; 
+}
+
+.informacion>p{
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+span{
+    font-weight: 600;
+}
+
+.seccionfotobanda {
+    width: 25vw; /* Ancho de la sección de la imagen */
+    /* height: 122h; Altura de la sección de la imagen */
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la imagen */
+}
+
+.seccionfotobanda > img {
+    width: 22vw; /* Ajusta la imagen al contenedor */
+    object-fit: contain;
+}
+
+.secciondos{
+    height: 40vh;
+    width: 98vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secciondos > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    font-size: 2vh;
+    height: 5vh; /* Altura del título */
+
+}
+
+.albumes{
+    display: flex;
+    gap: 0.1vw;
+
+}
+
+.albumes > article > a > img {
+    width: 14vw;
+    height: 26vh;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .mainprincipal {
+        height: 190vh;
+        gap: 2vh;
+    }
+    header {
+        height: 15vh;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    .fotologo {
+        height: 10vh;
+    }
+
+    .navegadorprincipal {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3vh;
+    }
+
+    .navenlaces {
+        width: 100%;
+        text-align: center;
+    }
+
+    .opcionnavegador {
+        font-size: 4vw;
+    }
+
+    .navredessociales {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .opcionnavegador > img {
+        width: 5vw;
+    }
+
+    .mainprincipal {
+        gap: 2vh;
+    }
+
+    .seccionuno > .contenido {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .seccionuno {
+    margin-top: 30vh;
+    }
+
+    
+
+    .informacion {
+        width: 100%;
+    }
+
+    .seccionfotobanda {
+        width: 100%;
+    }
+
+    .seccionfotobanda > img {
+        width: 50%;
+    }
+
+    .secciondos {
+        margin-top: 70vh;
+    }
+
+    .albumes > article > a > img {
+        width: 60%;
+        height: auto;
+        margin-left:12vw;
+    }
+
+    .albumes {
+        flex-direction: column;
+
+    }
+    
+}

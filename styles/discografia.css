@@ -1,0 +1,529 @@
+/*  FUENTES DE LETRA
+    font-family: "Nunito", sans-serif; 
+    font-family: "Bebas Neue", sans-serif;
+*/
+
+:root {
+    --color-verde-selftiltled:rgb(51, 80, 5);
+    --color-verde-claro-selftiltled:rgb(139, 212, 22) ;
+
+    --color-azul-oscuro-vessel:rgb(97, 132, 155);
+    --color-azul-claro-vessel:rgb(180, 216, 240);
+
+    --color-rojo-oscuro-blurryface:rgb(175, 8, 8);
+    --color-rojo-claro-blurryface:rgb(248, 43, 43);
+
+    --color-amarillo-oscuro-trench:rgb(194, 172, 4);
+    --color-amarillo-claro-trench:rgb(215, 193, 27);
+
+    --color-oscuro-rosa-sai:rgb(236, 109, 166);
+    --color-claro-rosa-sai:rgb(229, 128, 173);
+
+    
+    --color-rojo-clancy: rgb(229, 43, 37);
+
+
+
+}
+
+.mainprincipal{
+    height: 1270vh;
+}
+
+.discografiaportadas{
+    height: 26vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albumesportadas{
+    display: flex;
+
+}
+
+.albumesportadas > article > a > img {
+    width: 13vw;
+    margin-right: 1.2vw;
+
+}
+
+/* Contenido general */
+
+.titulo>h1{
+
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 2px;
+    align-items: center;
+
+    color: whitesmoke;
+
+    font-size: 23px;
+    height: 5vh; /* Altura del título */
+}
+
+.contenido {
+    display: flex;
+    height: 29.9vh;
+
+}
+
+.informaciondiscografia {
+    margin-left: 2vh;
+    width: 38vw;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-family: "Nunito", sans-serif;
+    padding: 1vw; /* Espacio alrededor del contenido */
+    box-sizing: border-box; /* Para que el padding no altere el tamaño total */
+}
+
+.playlist{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6vh;
+    padding-left: 1.6vw;
+}
+.lista{
+    width: 39.9vw;
+
+}
+
+.fotoalbum{
+    height: 29.9vh;
+}
+
+/* CANCIONES MAS FAAMOSAS GENERAL */
+.fotoalbumcancion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoalbumcancion>img{
+    margin-top: 4vh;
+    width: 23vw;
+}
+
+.seccionderechaselftiltled{
+    width: 28vw;
+    background-image: linear-gradient(  var(--color-verde-selftiltled), var(--color-verde-claro-selftiltled));
+}
+
+.seccionderechavessel{
+    width: 28vw;
+    background-image: linear-gradient(  var(--color-azul-oscuro-vessel), var(--color-azul-claro-vessel));
+}
+
+.seccionderechablurryface{
+    width: 28vw;
+    background-image: linear-gradient(  var(--color-rojo-oscuro-blurryface), var(--color-rojo-claro-blurryface));
+}
+
+.seccionderechatrench{
+    width: 28vw;
+    background-image: linear-gradient(  var(--color-amarillo-oscuro-trench), var(--color-amarillo-claro-trench));
+}
+
+.seccionderechasai{
+    width: 28vw;
+    background-image: linear-gradient(  var(--color-oscuro-rosa-sai), var(--color-claro-rosa-sai));
+}
+
+.seccionderechaclancy{
+    width: 28vw;
+    background-color: var(--color-rojo-clancy);
+}
+
+.seccionletra{
+    display: flex;
+}
+
+.enlacevideo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+/* Primer album */
+
+.primeralbum {
+    width: 98vw; /* Ancho de la sección */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.primeralbum > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    background-color: var(--color-verde-selftiltled);
+}
+
+
+
+/* Cancion 2: Fall away */
+.titulocancionselftiltled{
+    width: 98vw;
+    height: 5vh;
+    background-color: var(--color-verde-selftiltled);
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocancionselftiltled>h2{
+    font-size: 20px;
+    margin-left: 2vh;
+    color:white;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+
+.seccionizquierda1{
+    width: 70vw;
+    height: 160vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.seccionizquierda1>p{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+/* Video canción */
+
+.enlacevideo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+/*  Segundo album */
+
+.segundoalbum {
+    width: 98vw; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.segundoalbum > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    background-color: var(--color-azul-oscuro-vessel);
+}
+
+/* Cancion 5: Car Radio */
+.titulocancionvessel{
+    width: 98vw;
+    height: 5vh;
+    background-color: var(--color-azul-oscuro-vessel);
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocancionvessel>h2{
+    font-size: 20px;
+    margin-left: 2vh;
+    color:white;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+
+.seccionizquierda2{
+    width: 70vw;
+    height: 170vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.seccionizquierda2>p{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-family: "Nunito", sans-serif;
+}
+
+/*  Tercer album */
+
+.terceralbum {
+    width: 98vw; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.terceralbum > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    background-color: var(--color-rojo-oscuro-blurryface);
+}
+
+/* Cancion 2: Stressed Out */
+.titulocancionblurryface{
+    width: 98vw;
+    height: 5vh;
+    background-color: var(--color-rojo-oscuro-blurryface);
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocancionblurryface>h2{
+    font-size: 20px;
+    margin-left: 2vh;
+    color:white;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+
+.seccionizquierda3{
+    width: 70vw;
+    height: 140vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.seccionizquierda3>p{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+/* Cuarto album */
+
+.cuartoalbum {
+    width: 98vw; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cuartoalbum > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    background-color: var(--color-amarillo-claro-trench);
+}
+
+/* Cancion 2: Chlorine */
+.titulocanciontrench{
+    width: 98vw;
+    height: 5vh;
+    background-color: var(--color-amarillo-oscuro-trench);
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocanciontrench>h2{
+    font-size: 20px;
+    margin-left: 2vh;
+    color: white;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+
+.seccionizquierda4{
+    width: 70vw;
+    height: 197vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.seccionizquierda4>p{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Quinto album */
+
+.quintoalbum {
+    width: 98vw; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quintoalbum > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    background-color: var(--color-oscuro-rosa-sai);
+}
+
+/* Cancion 2: Stressed Out */
+.titulocancionsai{
+    width: 98vw;
+    height: 5vh;
+    background-color: var(--color-oscuro-rosa-sai);
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocancionsai>h2{
+    font-size: 20px;
+    margin-left: 2vh;
+    color:white;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+
+.seccionizquierda5{
+    width: 70vw;
+    height: 135vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.seccionizquierda5>p{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+/* Sexto album */
+
+.sextoalbum {
+    width: 98vw; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sextoalbum > .titulo {
+    width: 98vw; /* El título ocupa todo el ancho de la sección */
+    background-color: var(--color-rojo-clancy);
+}
+
+/* Cancion 2: Stressed Out */
+.titulocancionclancy{
+    width: 98vw;
+    height: 5vh;
+    background-color:var(--color-rojo-clancy);
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocancionclancy>h2{
+    font-size: 20px;
+    margin-left: 2vh;
+    color:white;
+    font-family: "Nunito", sans-serif; 
+}
+
+
+
+.seccionizquierda6{
+    width: 70vw;
+    height: 155vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.seccionizquierda6>p{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    .mainprincipal{
+        height: 1900vh;
+    }
+
+    .albumesportadas{
+        margin-bottom: 60vh;
+    }
+
+    .albumesportadas > article > a > img {
+        width: 40vh;
+        height: auto;
+    }
+
+    .albumesportadas {
+        flex-direction: column;
+
+    }
+    .titulo > h1 {
+        font-size: 6vw;
+    }
+
+    .informaciondiscografia {
+        font-size: 20px;
+    }
+
+    .albumesportadas > article > a > img {
+        width: 30vw;
+        margin-right: 2vw;
+    }
+
+
+
+    
+/* Cancion 2: Fall away */
+
+    .seccionizquierda1{
+        width: 70vw;
+        height:200vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* Cancion 5: Car Radio */
+
+    .seccionizquierda2{
+        width: 70vw;
+        height: 229vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* Cancion 2: Stressed Out */
+
+    .seccionizquierda3{
+        width: 70vw;
+        height: 260vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    /* Cancion 2: Chlorine */
+
+    .seccionizquierda4{
+        width: 70vw;
+        height: 235vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* Cancion 3: Shy away */
+
+    .seccionizquierda5{
+        width: 70vw;
+        height: 150vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* Cancion 1: Overcompensate */
+    .seccionizquierda6{
+        width: 70vw;
+        height: 250vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+}
+
+
